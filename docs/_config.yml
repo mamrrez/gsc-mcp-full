@@ -1,0 +1,40 @@
+title: gsc-mcp-full
+description: A Google Search Console MCP server that understands every language — Persian, Arabic, Chinese, Japanese, Korean, Turkish and more.
+remote_theme: just-the-docs/just-the-docs
+url: https://mamrrez.github.io
+baseurl: /gsc-mcp-full
+
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+enable_copy_code_button: true
+
+aux_links:
+  GitHub: https://github.com/mamrrez/gsc-mcp-full
+  Project page: https://hasanpour.com/tools/gsc-mcp-full/
+aux_links_new_tab: true
+
+back_to_top: true
+back_to_top_text: Back to top
+
+footer_content: 'Built by <a href="https://hasanpour.com/">Mohammadreza Hasanpour</a>. MIT licensed. Not affiliated with Google. Google Search Console is a trademark of Google LLC.'
+
+callouts:
+  note:
+    title: Note
+    color: blue
+  warning:
+    title: Warning
+    color: yellow
+  tip:
+    title: Tip
+    color: green
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

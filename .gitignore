@@ -1,0 +1,44 @@
+# Secrets — never commit these
+token.json
+*token*.json
+client_secret*.json
+*service-account*.json
+*service_account*.json
+credentials.json
+.env
+.env.*
+
+# Local data
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Jekyll (docs site) local builds
+docs/_site/
+docs/.jekyll-cache/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Working notes (kept locally, not published)
+RESEARCH.md
+
+# Output of scripts/live_check.py --out: real Search Console data
+live-check*.md
+live_check*.md

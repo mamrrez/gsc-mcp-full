@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://mamrrez.github.io/gsc-mcp-full/
+    about: Read the official documentation and guides before filing an issue.
+  - name: Security Vulnerabilities
+    url: https://github.com/mamrrez/gsc-mcp-full/blob/main/SECURITY.md
+    about: Read SECURITY.md for instructions on privately reporting security vulnerabilities.

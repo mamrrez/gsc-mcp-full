@@ -1,0 +1,69 @@
+name: Bug Report
+description: File a bug report for gsc-mcp-full
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please fill out the sections below to help us reproduce and fix it.
+  - type: input
+    id: tool_name
+    attributes:
+      label: Tool name
+      description: "The name of the MCP tool that was called (e.g. performance_overview, hourly_performance, url_inspect, or CLI)."
+      placeholder: "e.g. performance_overview"
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened?
+      description: "A clear and concise description of what went wrong. Include error messages or tracebacks if available."
+    validations:
+      required: true
+  - type: textarea
+    id: what_expected
+    attributes:
+      label: What you expected
+      description: "A clear and concise description of what you expected to happen."
+    validations:
+      required: true
+  - type: textarea
+    id: doctor_output
+    attributes:
+      label: Output of `gsc-mcp-full doctor`
+      description: "Run `gsc-mcp-full doctor` in your terminal and paste the full output here (note: doctor never prints tokens or credentials)."
+      render: shell
+    validations:
+      required: false
+  - type: input
+    id: package_version
+    attributes:
+      label: Package version
+      description: "The version of gsc-mcp-full being used (e.g. from `gsc-mcp-full --version`)."
+      placeholder: "e.g. 0.2.0"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      description: "Your operating system and version."
+      placeholder: "e.g. macOS 14.5, Ubuntu 22.04, Windows 11"
+    validations:
+      required: true
+  - type: input
+    id: python_version
+    attributes:
+      label: Python version
+      description: "The Python runtime version."
+      placeholder: "e.g. 3.11.4"
+    validations:
+      required: true
+  - type: input
+    id: mcp_client
+    attributes:
+      label: MCP client
+      description: "Which MCP client is being used to connect to the server."
+      placeholder: "e.g. Claude Desktop, Cursor, Zed, Goose"
+    validations:
+      required: true

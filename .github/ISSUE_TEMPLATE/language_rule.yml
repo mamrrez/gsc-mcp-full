@@ -1,0 +1,35 @@
+name: Language Rule / Query Grouping
+description: Report queries that are grouped or normalized incorrectly
+title: "[Language Rule]: "
+labels: ["i18n"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please consult [CONTRIBUTING.md](https://github.com/mamrrez/gsc-mcp-full/blob/main/CONTRIBUTING.md#adding-a-language-rule), section **"Adding a language rule"**, for guidelines on how query folding works and how rules are structured and tested.
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: Which language or script is this for?
+      placeholder: "e.g. Persian, Arabic, German, Russian, etc."
+    validations:
+      required: true
+  - type: dropdown
+    id: grouping_level
+    attributes:
+      label: Grouping level used
+      description: Which normalization level was used?
+      options:
+        - standard
+        - loose
+    validations:
+      required: true
+  - type: textarea
+    id: queries
+    attributes:
+      label: Real queries and grouping issue
+      description: Provide two or more real queries that should be merged but are not, or are merged but should not be. Explain why they should or should not fold together.
+      placeholder: "Query 1:\nQuery 2:\nExpected: (should merge / should not merge)\nReason:"
+    validations:
+      required: true

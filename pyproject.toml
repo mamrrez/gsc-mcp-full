@@ -1,0 +1,78 @@
+[build-system]
+requires = ["hatchling>=1.25", "hatch-fancy-pypi-readme>=24.1"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gsc-mcp-full"
+version = "0.2.1"
+description = "Google Search Console MCP server for Claude, Cursor and any MCP client: 37 tools, every API endpoint, hourly data, unlimited history, correct in every language."
+dynamic = ["readme"]
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Mohammadreza (mamrrez)" }]
+keywords = ["google-search-console", "search-console", "gsc", "mcp", "mcp-server", "model-context-protocol", "seo", "claude", "cursor", "multilingual"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+]
+dependencies = [
+  "mcp>=2.0,<3",
+  "google-auth>=2.30",
+  "google-auth-oauthlib>=1.2",
+  "requests>=2.31",
+  "tzdata>=2024.1; sys_platform == 'win32'",  # Windows has no system tz database for zoneinfo
+]
+
+[project.optional-dependencies]
+zh = ["jieba>=0.42", "opencc-python-reimplemented>=0.1.7"]
+ja = ["fugashi>=1.3", "unidic-lite>=1.0.8"]
+th = ["pythainlp>=5.0"]
+all = ["jieba>=0.42", "opencc-python-reimplemented>=0.1.7", "fugashi>=1.3", "unidic-lite>=1.0.8", "pythainlp>=5.0"]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+gsc-mcp-full = "gsc_mcp_full.cli:main"
+
+[project.urls]
+Homepage = "https://mamrrez.github.io/gsc-mcp-full/"
+Documentation = "https://mamrrez.github.io/gsc-mcp-full/"
+Repository = "https://github.com/mamrrez/gsc-mcp-full"
+Issues = "https://github.com/mamrrez/gsc-mcp-full/issues"
+Changelog = "https://github.com/mamrrez/gsc-mcp-full/blob/main/CHANGELOG.md"
+"Project page" = "https://hasanpour.com/tools/gsc-mcp-full/"
+
+# PyPI cannot resolve relative paths, so the banner is pointed at the repository when the package is built.
+[tool.hatch.metadata.hooks.fancy-pypi-readme]
+content-type = "text/markdown"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+path = "README.md"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.substitutions]]
+pattern = 'src="assets/'
+replacement = 'src="https://raw.githubusercontent.com/mamrrez/gsc-mcp-full/main/assets/'
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gsc_mcp_full"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "README.md", "LICENSE", "CHANGELOG.md"]
+
+[tool.ruff]
+line-length = 140
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501", "B905"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
