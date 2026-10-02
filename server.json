@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.mamrrez/gsc-mcp-full",
+  "title": "Google Search Console",
+  "description": "Google Search Console: 37 tools, every API endpoint, hourly data, history beyond 16 months.",
+  "repository": {
+    "url": "https://github.com/mamrrez/gsc-mcp-full",
+    "source": "github"
+  },
+  "websiteUrl": "https://mamrrez.github.io/gsc-mcp-full/",
+  "version": "0.2.2",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "gsc-mcp-full",
+      "version": "0.2.2",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

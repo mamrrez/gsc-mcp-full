@@ -7,7 +7,7 @@ description: Every tool with its parameters, generated from the server itself.
 # Tool reference
 {: .no_toc }
 
-37 tools in gsc-mcp-full 0.2.1. This page is generated from the code by `scripts/gen_tools_doc.py`.
+37 tools in gsc-mcp-full 0.2.2. This page is generated from the code by `scripts/gen_tools_doc.py`.
 
 Tools marked **write** need `GSC_ALLOW_WRITE=1`. Every analysis tool accepts `source="history"` to run on the local store.
 

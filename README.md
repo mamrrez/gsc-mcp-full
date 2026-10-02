@@ -351,3 +351,5 @@ Contributions are welcome, especially language rules and real query samples — 
 [MIT](https://github.com/mamrrez/gsc-mcp-full/blob/main/LICENSE) © [Mohammadreza Hasanpour](https://hasanpour.com/)
 
 This project is not affiliated with or endorsed by Google. Google Search Console is a trademark of Google LLC.
+
+<!-- mcp-name: io.github.mamrrez/gsc-mcp-full -->
