@@ -4,6 +4,11 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/) and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## [0.2.3] — 2026-10-02
+
+### Changed
+- The README and package page open with a short demo and link the companion Google Trends server.
+
 ## [0.2.2] — 2026-10-02
 
 ### Added

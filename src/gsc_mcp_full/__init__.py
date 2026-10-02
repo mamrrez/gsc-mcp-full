@@ -10,4 +10,4 @@ The package is split into layers that do not know about each other:
 - ``server``   the MCP tools, which only glue the layers above together
 """
 
-__version__ = "0.2.2"
+__version__ = "0.2.3"

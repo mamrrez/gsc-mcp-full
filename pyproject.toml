@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "gsc-mcp-full"
-version = "0.2.2"
+version = "0.2.3"
 description = "Google Search Console MCP server for Claude, Cursor and any MCP client: 37 tools, every API endpoint, hourly data, unlimited history, correct in every language."
 dynamic = ["readme"]
 license = "MIT"
