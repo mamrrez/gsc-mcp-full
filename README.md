@@ -346,6 +346,10 @@ uv run python scripts/live_check.py   # optional: read-only check of every tool 
 
 Contributions are welcome, especially language rules and real query samples — see [CONTRIBUTING.md](https://github.com/mamrrez/gsc-mcp-full/blob/main/CONTRIBUTING.md).
 
+## Related
+
+- [gtrends-mcp-full](https://github.com/mamrrez/gtrends-mcp-full) — the companion Google Trends MCP server: Trending Now, interest over time and by region, related searches, seasonality and share of search, with no API key.
+
 ## License
 
 [MIT](https://github.com/mamrrez/gsc-mcp-full/blob/main/LICENSE) © [Mohammadreza Hasanpour](https://hasanpour.com/)
