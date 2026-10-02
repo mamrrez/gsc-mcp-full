@@ -16,6 +16,8 @@
 
 ---
 
+<p align="center"><img src="assets/demo.gif" alt="Claude finding keyword cannibalization with the find_cannibalization tool of gsc-mcp-full, on sample data for a fictional site" width="100%"></p>
+
 ## What you get
 
 | | |
